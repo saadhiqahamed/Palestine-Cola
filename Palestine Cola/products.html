@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Products – Palestine Drinks</title>
+  <meta name="description" content="Explore Palestine Drinks: Palestine Cola, Sugarfree, Energy, Orange and Lemon Lime. Drink with purpose." />
+  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="inner-pages-premium.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;700;800;900;950&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ── SCROLL PROGRESS ── -->
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<!-- ── PRELOADER ── -->
+<div id="preloader" role="status" aria-label="Loading Palestine Drinks">
+  <div class="preloader-logo">Palestine <span>Drinks</span></div>
+  <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+</div>
+
+<!-- ══════════════════════════════════
+     NAVIGATION (WHITE MODE)
+══════════════════════════════════ -->
+<header id="navbar" role="banner">
+  <nav class="nav-inner" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Palestine Drinks home">
+      <div class="nav-logo-wrap">
+        <span class="logo-script">Palestine</span>
+        <span class="logo-sub">Drinks</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" class="active" aria-current="page">Our Products</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="https://www.safadfoundation.com/" target="_blank" rel="noopener noreferrer" class="btn-foundation-nav" aria-label="Visit Safad Foundation (opens in new tab)">
+        Safad Foundation <span aria-hidden="true">↗</span>
+      </a>
+      <a href="register.html" class="btn-reseller">Become a Reseller</a>
+      <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation" hidden>
+  <a href="index.html">Home</a>
+  <a href="products.html">Our Products</a>
+  <a href="about.html">About Us</a>
+  <a href="mission.html">Mission</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+  <div class="mobile-menu-cta">
+    <a href="https://www.safadfoundation.com/" target="_blank" rel="noopener noreferrer" class="btn-foundation-nav" style="justify-content:center;padding:12px;">
+      Safad Foundation ↗
+    </a>
+    <a href="register.html" class="btn-primary" style="justify-content:center;">Become a Reseller</a>
+    <a href="login.html" class="btn-secondary" style="justify-content:center;">Partner Log In</a>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     PAGE HERO
+══════════════════════════════════ -->
+<main id="main-content">
+<section class="page-hero" aria-label="Products Introduction">
+  <div class="page-hero-inner">
+    <div class="hero-badge-pill reveal">
+      <span class="badge-pulse-dot"></span>
+      <span>Authentic Swedish Craft · Palestinian Heritage</span>
+    </div>
+    <h1 class="page-hero-title reveal delay-1 ip-fade-up">
+      <span class="c-black">Pure Craft,</span> <span class="c-red">Real Taste,</span> <span class="c-green">Enduring Freedom</span>
+    </h1>
+    <p class="page-hero-desc reveal delay-2">
+      Every can is masterfully formulated with pure Swedish water, balanced carbonation, and authentic natural flavors. Explore our full range of 5 craft beverages.
+    </p>
+
+    <!-- Interactive Flavor Filter Bar -->
+    <div class="product-filter-bar reveal delay-3" role="tablist" aria-label="Filter products by category">
+      <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Beverages (5)</button>
+      <button class="filter-btn" data-filter="cola" role="tab" aria-selected="false">Original Cola</button>
+      <button class="filter-btn" data-filter="sf" role="tab" aria-selected="false">Zero Sugar</button>
+      <button class="filter-btn" data-filter="energy" role="tab" aria-selected="false">Energy Blend</button>
+      <button class="filter-btn" data-filter="citrus" role="tab" aria-selected="false">Citrus Collection</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     PRODUCT SHOWCASE ROWS (LUXURY MODE)
+══════════════════════════════════ -->
+<section class="page-content" aria-label="Detailed Product Lineup">
+  <div class="product-page-list">
+
+    <!-- 01 PALESTINE COLA -->
+    <article class="product-row reveal ip-fade-up" data-category="cola" data-product="cola">
+      <div class="product-row-img" style="background:var(--cola-tint)" onclick="openModal('cola')" role="button" tabindex="0" aria-label="Explore Palestine Cola details">
+        <div class="product-can-glow" style="background: radial-gradient(circle, rgba(206, 17, 38, 0.28) 0%, transparent 70%);"></div>
+        <img src="assets/products/palestine-cola.png" alt="Palestine Cola 330ml Can" />
+        <span class="product-floating-badge badge-cola">Original Recipe</span>
+      </div>
+      <div class="product-row-info">
+        <div class="product-category-chip chip-cola">
+          <span class="chip-dot"></span>
+          <span>01 · Flagship Product</span>
+        </div>
+        <h2 class="product-row-name">Palestine <span style="color:var(--cola-accent);">Cola</span></h2>
+            <div class="product-accent-line"></div>
+        <p class="product-row-tagline" style="color:var(--cola-accent);">A Fresh Taste of Freedom</p>
+        <p class="product-row-desc">
+          Taste the refreshing essence of Palestine Cola, perfectly balancing sparkling effervescence and authentic sweetness. Every sip brings a burst of freshness, offering an authentic taste of freedom and community. When you choose Palestine Cola, you stand with the global mission: <em>"Never stop talking about Palestine."</em>
+        </p>
+        <div class="product-specs-grid">
+          <span class="spec-pill"><strong>Volume:</strong> 330 mL Can</span>
+          <span class="spec-pill"><strong>Profile:</strong> Full-Bodied Fizz</span>
+          <span class="spec-pill"><strong>Origin:</strong> Sweden Bottled</span>
+        </div>
+        <div class="product-actions-row">
+          <button class="btn-primary btn-product-action" onclick="openModal('cola')">
+            <span>Explore Flavor &amp; Story</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 PALESTINE COLA SUGARFREE -->
+    <article class="product-row reverse reveal ip-fade-up" data-category="sf" data-product="sf">
+      <div class="product-row-img" style="background:var(--sugarfree-tint)" onclick="openModal('sf')" role="button" tabindex="0" aria-label="Explore Palestine Cola Sugarfree details">
+        <div class="product-can-glow" style="background: radial-gradient(circle, rgba(60, 60, 60, 0.24) 0%, transparent 70%);"></div>
+        <img src="assets/products/palestine-cola-sugarfree.png" alt="Palestine Cola Sugarfree 330ml Can" />
+        <span class="product-floating-badge badge-sf">Zero Sugar</span>
+      </div>
+      <div class="product-row-info">
+        <div class="product-category-chip chip-sf">
+          <span class="chip-dot"></span>
+          <span>02 · Zero Sugar Edition</span>
+        </div>
+        <h2 class="product-row-name">Palestine Cola <span style="color:#2b2b2b;">Sugarfree</span></h2>
+            <div class="product-accent-line"></div>
+        <p class="product-row-tagline" style="color:var(--sugarfree-accent);">Experience Freedom Without Sugar</p>
+        <p class="product-row-desc">
+          Enjoy the iconic taste of Palestine Cola — now in a zero-sugar formulation. Featuring the exact same crisp character and perfectly balanced carbonation, Palestine Cola Sugarfree is the definitive option for those seeking a full-flavor soft drink with zero calories.
+        </p>
+        <div class="product-specs-grid">
+          <span class="spec-pill"><strong>Volume:</strong> 330 mL Can</span>
+          <span class="spec-pill"><strong>Calories:</strong> 0 kcal</span>
+          <span class="spec-pill"><strong>Diet:</strong> 100% Sugar-Free</span>
+        </div>
+        <div class="product-actions-row">
+          <button class="btn-primary btn-product-action" onclick="openModal('sf')">
+            <span>Explore Flavor &amp; Story</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 03 PALESTINE ENERGY -->
+    <article class="product-row reveal ip-fade-up" data-category="energy" data-product="energy">
+      <div class="product-row-img" style="background:var(--energy-tint)" onclick="openModal('energy')" role="button" tabindex="0" aria-label="Explore Palestine Energy Drink details">
+        <div class="product-can-glow" style="background: radial-gradient(circle, rgba(8, 116, 67, 0.30) 0%, transparent 70%);"></div>
+        <img src="assets/products/palestine-energy.png" alt="Palestine Energy Drink Can" />
+        <span class="product-floating-badge badge-energy">B-Vitamins Enriched</span>
+      </div>
+      <div class="product-row-info">
+        <div class="product-category-chip chip-energy">
+          <span class="chip-dot"></span>
+          <span>03 · Active Vitality</span>
+        </div>
+        <h2 class="product-row-name">Palestine <span style="color:var(--energy-accent);">Energy Drink</span></h2>
+            <div class="product-accent-line"></div>
+        <p class="product-row-tagline" style="color:var(--energy-accent);">The Power of Freedom</p>
+        <p class="product-row-desc">
+          Discover a high-performance beverage crafted to fuel your day with refreshing flavor and sustained vitality. Enriched with essential B-vitamins (B3, B6, B12), Palestine Energy keeps you sharp and alert whether during work, study, or intense physical training.
+        </p>
+        <div class="product-specs-grid">
+          <span class="spec-pill"><strong>Vitamins:</strong> B3 · B6 · B12</span>
+          <span class="spec-pill"><strong>Volume:</strong> 330 mL Can</span>
+          <span class="spec-pill"><strong>Formula:</strong> Enhanced Focus</span>
+        </div>
+        <div class="product-actions-row">
+          <button class="btn-primary btn-product-action" onclick="openModal('energy')">
+            <span>Explore Flavor &amp; Story</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 04 PALESTINE ORANGE -->
+    <article class="product-row reverse reveal ip-fade-up" data-category="citrus" data-product="orange">
+      <div class="product-row-img" style="background:var(--orange-tint)" onclick="openModal('orange')" role="button" tabindex="0" aria-label="Explore Palestine Orange Drink details">
+        <div class="product-can-glow" style="background: radial-gradient(circle, rgba(217, 101, 0, 0.28) 0%, transparent 70%);"></div>
+        <img src="assets/products/palestine-orange.png" alt="Palestine Orange Drink Can" />
+        <span class="product-floating-badge badge-orange">Sunlit Jaffa Citrus</span>
+      </div>
+      <div class="product-row-info">
+        <div class="product-category-chip chip-orange">
+          <span class="chip-dot"></span>
+          <span>04 · Sparkling Citrus</span>
+        </div>
+        <h2 class="product-row-name">Palestine <span style="color:var(--orange-accent);">Orange Drink</span></h2>
+            <div class="product-accent-line"></div>
+        <p class="product-row-tagline" style="color:var(--orange-accent);">Celebrate Historic Citrus Groves</p>
+        <p class="product-row-desc">
+          Celebrate the sunlit spirit of Palestine with Palestine Orange, a vibrant sparkling soda infused with bright citrus notes. Inspired by the legendary historic orange groves of Palestine, each sip delivers an exquisite balance of natural sweetness and effervescent sparkle.
+        </p>
+        <div class="product-specs-grid">
+          <span class="spec-pill"><strong>Volume:</strong> 330 mL Can</span>
+          <span class="spec-pill"><strong>Flavor:</strong> Mediterranean Orange</span>
+          <span class="spec-pill"><strong>Status:</strong> Coming Soon</span>
+        </div>
+        <div class="product-actions-row">
+          <button class="btn-primary btn-product-action" onclick="openModal('orange')">
+            <span>Explore Flavor &amp; Story</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 05 PALESTINE LEMON LIME -->
+    <article class="product-row reveal ip-fade-up" data-category="citrus" data-product="lemon">
+      <div class="product-row-img" style="background:var(--lemon-tint)" onclick="openModal('lemon')" role="button" tabindex="0" aria-label="Explore Palestine Lemon Lime Drink details">
+        <div class="product-can-glow" style="background: radial-gradient(circle, rgba(120, 155, 26, 0.28) 0%, transparent 70%);"></div>
+        <img src="assets/products/palestine-lemon-lime.png" alt="Palestine Lemon Lime Drink Can" />
+        <span class="product-floating-badge badge-lemon">Zesty Mediterranean</span>
+      </div>
+      <div class="product-row-info">
+        <div class="product-category-chip chip-lemon">
+          <span class="chip-dot"></span>
+          <span>05 · Crisp &amp; Bright</span>
+        </div>
+        <h2 class="product-row-name">Palestine <span style="color:var(--lemon-accent);">Lemon Lime</span></h2>
+            <div class="product-accent-line"></div>
+        <p class="product-row-tagline" style="color:var(--lemon-accent);">Feel the Crisp Mediterranean Breeze</p>
+        <p class="product-row-desc">
+          Invigorating and brilliantly refreshing, Palestine Lemon Lime combines crisp citrus notes with a finely tuned touch of natural sweetness. Its bubbly texture and clean finish make it the ideal accompaniment for sunny days and vibrant social gatherings.
+        </p>
+        <div class="product-specs-grid">
+          <span class="spec-pill"><strong>Volume:</strong> 330 mL Can</span>
+          <span class="spec-pill"><strong>Flavor:</strong> Lemon &amp; Lime</span>
+          <span class="spec-pill"><strong>Status:</strong> Coming Soon</span>
+        </div>
+        <div class="product-actions-row">
+          <button class="btn-primary btn-product-action" onclick="openModal('lemon')">
+            <span>Explore Flavor &amp; Story</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+</main>
+
+<!-- ══════════════════════════════════
+     FOOTER
+══════════════════════════════════ -->
+<footer id="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">Palestine</div>
+        <div class="footer-logo-sub">Drinks</div>
+        <p class="footer-tagline">"Never stop talking about Palestine."</p>
+        <div class="footer-company-info">
+          Safad Food AB<br/>
+          Org. no. 5593437741<br/>
+          Emilstorpsgatan 23, Malmö, Sweden<br/>
+          +46 (0)762 457 724
+        </div>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Navigation</p>
+        <ul class="footer-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Our Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="mission.html">Mission</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Partner</p>
+        <ul class="footer-links" role="list">
+          <li><a href="register.html">Become a Reseller</a></li>
+          <li><a href="login.html">Log In</a></li>
+          <li><a href="register.html">Create Account</a></li>
+        </ul>
+        <p class="footer-col-title" style="margin-top:28px">Foundation</p>
+        <ul class="footer-links" role="list">
+          <li><a href="https://www.safadfoundation.com/" target="_blank" rel="noopener noreferrer">Safad Foundation ↗</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Safad Food AB. All rights reserved.</p>
+      <nav class="footer-legal" aria-label="Legal links">
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════
+     PRODUCT MODAL
+══════════════════════════════════ -->
+<div id="product-modal" role="dialog" aria-modal="true" aria-label="Product details" aria-hidden="true">
+  <div class="modal-overlay" onclick="closeModal()" aria-label="Close modal"></div>
+  <div class="modal-box">
+    <div class="modal-img-side" id="modal-img-side">
+      <div class="modal-can-stage" id="modal-can-stage">
+        <div class="modal-flavor-aura" id="modal-flavor-aura"></div>
+        <div class="modal-can-wrap" id="modal-can-wrap">
+          <img class="modal-can-img" id="modal-can-img" src="assets/products/palestine-cola.png" alt="Palestine Drinks Can" />
+          <div class="modal-can-sheen"></div>
+        </div>
+        <div class="modal-can-shadow"></div>
+      </div>
+      <button class="modal-close" onclick="closeModal()" aria-label="Close product details">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="modal-info-side">
+      <p class="modal-label" id="modal-label">Palestine Drinks</p>
+      <h2 class="modal-name" id="modal-name"></h2>
+      <p class="modal-tagline" id="modal-tagline"></p>
+      <div class="modal-divider"></div>
+      <p class="modal-desc" id="modal-desc"></p>
+      <p class="modal-vol" id="modal-vol"></p>
+      <div id="modal-vitamins" class="modal-vitamins" style="display:none">
+        <p class="modal-label" style="margin-bottom:8px;">Vitamins</p>
+        <span class="modal-vitamin-tag">Vitamin B3</span>
+        <span class="modal-vitamin-tag">Vitamin B6</span>
+        <span class="modal-vitamin-tag">Vitamin B12</span>
+      </div>
+      <div class="modal-status-row">
+        <span class="badge" id="modal-status"></span>
+      </div>
+      <p class="modal-story" id="modal-story"></p>
+      <a href="register.html" class="btn-primary">Find a Reseller</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

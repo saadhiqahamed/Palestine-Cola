@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Become a Partner – Palestine Drinks</title>
+  <meta name="description" content="Apply to become a Palestine Drinks reseller partner. Safad Food AB." />
+  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="inner-pages-premium.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;700;800;900;950&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ── SCROLL PROGRESS ── -->
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<!-- ── PRELOADER ── -->
+<div id="preloader" role="status" aria-label="Loading Palestine Drinks">
+  <div class="preloader-logo">Palestine <span>Drinks</span></div>
+  <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+</div>
+
+<!-- ══════════════════════════════════
+     TOP NAVBAR
+══════════════════════════════════ -->
+<header id="navbar" role="banner">
+  <nav class="nav-inner" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Palestine Drinks home">
+      <div class="nav-logo-wrap">
+        <span class="logo-script">Palestine</span>
+        <span class="logo-sub">Drinks</span>
+      </div>
+    </a>
+
+    <div class="nav-right">
+      <a href="https://www.safadfoundation.com/" target="_blank" rel="noopener noreferrer" class="btn-foundation-nav" aria-label="Visit Safad Foundation (opens in new tab)">
+        Safad Foundation <span aria-hidden="true">↗</span>
+      </a>
+      <a href="login.html" class="btn-secondary" style="padding:8px 18px;font-size:0.75rem;">Log In</a>
+      <a href="index.html" class="btn-secondary" style="padding:8px 18px;font-size:0.75rem;">← Back to Site</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ══════════════════════════════════
+     REGISTER MULTI-STEP (WHITE MODE)
+══════════════════════════════════ -->
+<main class="register-page" style="padding-top:calc(var(--nav-height) + 40px);">
+  <div class="register-inner">
+    <div style="text-align:center;margin-bottom:44px;">
+      <span class="section-label">Reseller Program</span>
+      <h1 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,2.8rem);font-weight:900;text-transform:uppercase;margin-bottom:10px;">
+        <span class="c-black">Become</span> <span class="c-red">A</span> <span class="c-green">Partner</span>
+      </h1>
+      <p style="font-size:1.05rem;color:var(--text-body);">
+        Become a partner today and order your product batches directly from Safad Food AB.
+      </p>
+    </div>
+
+    <!-- Step Indicator -->
+    <div class="step-indicator" aria-label="Progress steps">
+      <div class="step-dot">
+        <div class="step-circle active" id="step-circle-1">1</div>
+        <div class="step-label active" id="step-label-1">Account</div>
+      </div>
+      <div class="step-connector" id="step-conn-1"></div>
+      <div class="step-dot">
+        <div class="step-circle" id="step-circle-2">2</div>
+        <div class="step-label" id="step-label-2">Business</div>
+      </div>
+      <div class="step-connector" id="step-conn-2"></div>
+      <div class="step-dot">
+        <div class="step-circle" id="step-circle-3">3</div>
+        <div class="step-label" id="step-label-3">Details</div>
+      </div>
+    </div>
+
+    <!-- Multi-Step Form -->
+    <form id="register-form" novalidate>
+
+      <!-- STEP 1: CREATE ACCOUNT -->
+      <div class="step-panel active" id="step-panel-1">
+        <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:800;text-transform:uppercase;color:var(--text-main);margin-bottom:6px;">
+          Step 1: Create Account
+        </h2>
+        <p style="font-size:0.95rem;color:var(--text-muted);margin-bottom:28px;">
+          Enter your contact details to begin your partner application.
+        </p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="reg-first-name">First Name</label>
+            <input type="text" id="reg-first-name" name="first_name" class="form-input" placeholder="First Name" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-surname">Surname</label>
+            <input type="text" id="reg-surname" name="surname" class="form-input" placeholder="Surname" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="reg-phone">Business Phone Number</label>
+            <input type="tel" id="reg-phone" name="business_phone" class="form-input" placeholder="+46 ..." required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-email">Business Email</label>
+            <input type="email" id="reg-email" name="email" class="form-input" placeholder="partner@business.com" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reg-type">Business Type</label>
+          <select id="reg-type" name="business_type" class="form-input" required>
+            <option value="">Select business type...</option>
+            <option value="supermarket">Supermarket / Grocery Chain</option>
+            <option value="restaurant">Restaurant / Café / Dining</option>
+            <option value="convenience">Convenience Store / Kiosk</option>
+            <option value="distributor">Wholesale / Regional Distributor</option>
+            <option value="ecommerce">Online / E-Commerce Store</option>
+            <option value="catering">Catering &amp; Events</option>
+            <option value="other">Other Commercial Business</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="reg-pass">Password</label>
+            <input type="password" id="reg-pass" name="password" class="form-input" placeholder="Minimum 8 characters" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-conf">Confirm Password</label>
+            <input type="password" id="reg-conf" name="confirm_password" class="form-input" placeholder="Repeat password" required />
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 2: BUSINESS DETAILS -->
+      <div class="step-panel" id="step-panel-2">
+        <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:800;text-transform:uppercase;color:var(--text-main);margin-bottom:6px;">
+          Step 2: Business Details
+        </h2>
+        <p style="font-size:0.95rem;color:var(--text-muted);margin-bottom:28px;">
+          Provide your legal company information for verification.
+        </p>
+
+        <div class="form-group">
+          <label class="form-label" for="reg-company">Company Name</label>
+          <input type="text" id="reg-company" name="company_name" class="form-input" placeholder="Registered Legal Company Name" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reg-country">Country</label>
+          <input type="text" id="reg-country" name="country" class="form-input" placeholder="e.g. Sweden, United Kingdom, Germany" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reg-address">Street Address</label>
+          <input type="text" id="reg-address" name="address" class="form-input" placeholder="Street and number" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="reg-postal">Postal Code</label>
+            <input type="text" id="reg-postal" name="postal_code" class="form-input" placeholder="Postal Code" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-city">City</label>
+            <input type="text" id="reg-city" name="city" class="form-input" placeholder="City" required />
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 3: OTHER DETAILS -->
+      <div class="step-panel" id="step-panel-3">
+        <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:800;text-transform:uppercase;color:var(--text-main);margin-bottom:6px;">
+          Step 3: Additional Information
+        </h2>
+        <p style="font-size:0.95rem;color:var(--text-muted);margin-bottom:28px;">
+          Tell us about your estimated volumes and operational channels.
+        </p>
+
+        <div class="form-group">
+          <label class="form-label" for="reg-notes">Additional Information</label>
+          <textarea id="reg-notes" name="additional_info" class="form-input" placeholder="Estimated monthly batch orders, distribution regions, or questions..."></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="reg-web">Company Website (Optional)</label>
+            <input type="url" id="reg-web" name="website" class="form-input" placeholder="https://..." />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-social">Social Media Handle (Optional)</label>
+            <input type="text" id="reg-social" name="social_media" class="form-input" placeholder="@yourbrand" />
+          </div>
+        </div>
+
+        <div style="margin:28px 0;">
+          <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;font-size:0.95rem;color:var(--text-body);line-height:1.6;">
+            <input type="checkbox" name="confirm_truth" style="margin-top:4px;accent-color:var(--green);" required />
+            <span>I confirm that the information I submit is correct and up to date.</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="step-buttons">
+        <button type="button" class="btn-secondary" id="register-back" style="visibility:hidden">← Back</button>
+        <button type="button" class="btn-primary" id="register-next">Next →</button>
+      </div>
+
+    </form>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
